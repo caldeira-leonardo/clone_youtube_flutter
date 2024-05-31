@@ -9,11 +9,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       builder: (context, __) {
-        return SizedBox(
-          height: MediaQuery.sizeOf(context).height,
-          width: MediaQuery.sizeOf(context).width,
-          child: const NavigationCustom(),
-        );
+        return const NavigationCustom();
       },
     );
   }
