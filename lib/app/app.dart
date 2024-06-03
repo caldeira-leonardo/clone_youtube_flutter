@@ -1,16 +1,20 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 
-import 'shared/widgets/navigation_custom.dart';
+class AppWidget extends StatelessWidget {
+  const AppWidget({super.key});
 
-class App extends StatelessWidget {
-  const App({super.key});
-
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      builder: (context, __) {
-        return const NavigationCustom();
-      },
+    Modular.setInitialRoute('/feed/playlists/');
+    log('entrou no app que tem o roteamento');
+
+    return MaterialApp.router(
+      routerDelegate: Modular.routerDelegate,
+      routeInformationParser: Modular.routeInformationParser,
     );
   }
 }

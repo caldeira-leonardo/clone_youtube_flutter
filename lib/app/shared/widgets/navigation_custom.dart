@@ -25,15 +25,47 @@ class _NavigationCustomState extends State<NavigationCustom> {
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static const List<Widget> _widgetOptions = <Widget>[
     Text(
-      'Index 0: Home',
+      'Index 0: Inicio',
       style: optionStyle,
     ),
     Text(
-      'Index 1: Business',
+      'Index 1: Shorts',
       style: optionStyle,
     ),
     Text(
-      'Index 2: School',
+      'Index 2: Inscrições',
+      style: optionStyle,
+    ),
+    Text(
+      'Index 3: Você',
+      style: optionStyle,
+    ),
+    Text(
+      'Index 4: Seu Canal',
+      style: optionStyle,
+    ),
+    Text(
+      'Index 5: Histórico',
+      style: optionStyle,
+    ),
+    Text(
+      'Index 6: Playlist',
+      style: optionStyle,
+    ),
+    Text(
+      'Index 7: Configurações',
+      style: optionStyle,
+    ),
+    Text(
+      'Index 8: Histórico de denuncias',
+      style: optionStyle,
+    ),
+    Text(
+      'Index 9: Ajuda',
+      style: optionStyle,
+    ),
+    Text(
+      'Index 10: Enviar feedback',
       style: optionStyle,
     ),
   ];
